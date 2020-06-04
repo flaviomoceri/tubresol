@@ -1,6 +1,10 @@
 import Head from "next/head";
 import NProgress from "next-nprogress/component";
+
+import "../styles/bootstrap.min.css";
 import "../styles/antd.css";
+import "../styles/bootstrap-grid.css";
+import "../styles/landing.css";
 import "../styles/global.css";
 
 const App = ({ Component, pageProps }) => (
@@ -11,7 +15,7 @@ const App = ({ Component, pageProps }) => (
       />
 
       <Head>
-        <title>Pulse</title>
+        <title>Build Your Path</title>
       </Head>
 
       <Component {...pageProps} />

@@ -1,3 +1,7 @@
-const withCSS = require("@zeit/next-css");
+const withCSS = require('@zeit/next-css')
+const withPWA = require('next-pwa')
 
-module.exports = withCSS({ cssLoaderOptions: { url: false } });
+module.exports = withPWA(
+  { pwa: { dest: 'public' } }, 
+  withCSS({ cssLoaderOptions: { url: false } })
+);
